@@ -60,7 +60,7 @@ void sendPacket(Equipment * equipment, Antenna * antenna, Simulation * simulatio
     float r = rand() / (float) RAND_MAX;
 
     //If packet must be sent
-    if(r < simulation->packetDensity / (simulation->length / simulation->refreshPeriod) ) {
+    if(r < simulation->packetDensity / (3600000 / simulation->refreshPeriod) ) {
 
         int spreadingFactor;
 
